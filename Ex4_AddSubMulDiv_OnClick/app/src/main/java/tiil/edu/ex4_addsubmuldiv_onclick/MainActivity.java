@@ -29,3 +29,18 @@ public class MainActivity extends AppCompatActivity {
         nutchia = (Button) findViewById(R.id.btnchia);
     }
 
+    public void xulycong(View view) {
+
+        // lấy dữ liệu từ 2 điều khiển
+        String so_1 = editText1.getText().toString();
+        String so_2 = editText2.getText().toString();
+        //chuyển dữ liệu từ chuỗi sang số
+        float so_a = Float.parseFloat(so_1);
+        float so_b = Float.parseFloat(so_2);
+        // tính toán
+        float tong = so_a+so_b;
+        //chuẩn bị dữ liệu
+        String chuoikq = String.valueOf(tong);
+        //gắn kết quả
+        editTextkq.setText(chuoikq);
+    }
