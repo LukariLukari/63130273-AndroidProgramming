@@ -46,3 +46,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+//tạo bộ lắng nghe và xử lý sự kiện
+View.OnClickListener bolangnghe_xulycong = new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        //code xử lý cộng
+        String so_a = editTextsoa.getText().toString();
+        String so_b = editTextsob.getText().toString();
+
+        float a = Float.parseFloat(so_a);
+        float b = Float.parseFloat(so_b);
+
+        float tong = a+b;
+        String kq = String.valueOf(tong);
+        textViewkq.setText(kq);
+    }
+};
