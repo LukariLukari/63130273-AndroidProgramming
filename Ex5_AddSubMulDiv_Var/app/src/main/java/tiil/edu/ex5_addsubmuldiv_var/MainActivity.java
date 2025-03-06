@@ -62,3 +62,64 @@ View.OnClickListener bolangnghe_xulycong = new View.OnClickListener() {
         textViewkq.setText(kq);
     }
 };
+View.OnClickListener bolangnghe_xulytru = new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        //code xử lý cộng
+        String so_a = editTextsoa.getText().toString();
+        String so_b = editTextsob.getText().toString();
+
+        float a = Float.parseFloat(so_a);
+        float b = Float.parseFloat(so_b);
+
+        float hieu = a-b;
+        String kq = String.valueOf(hieu);
+        textViewkq.setText(kq);
+    }
+};
+View.OnClickListener bolangnghe_xulynhan = new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        //code xử lý cộng
+        String so_a = editTextsoa.getText().toString();
+        String so_b = editTextsob.getText().toString();
+
+        float a = Float.parseFloat(so_a);
+        float b = Float.parseFloat(so_b);
+
+        float tich = a*b;
+        String kq = String.valueOf(tich);
+        textViewkq.setText(kq);
+    }
+};
+//    View.OnClickListener bolangnghe_xulychia = new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            //code xử lý cộng
+//            String so_a = editTextsoa.getText().toString();
+//            String so_b = editTextsob.getText().toString();
+//
+//            float a = Float.parseFloat(so_a);
+//            float b = Float.parseFloat(so_b);
+//
+//            float thuong = a/b;
+//            String kq = String.valueOf(thuong);
+//            textViewkq.setText(kq);
+//        }
+//    };
+
+//////////////////////////////////////////////////////////////////////////////
+//khia báo đối tượng
+EditText editTextsoa;
+EditText editTextsob;
+TextView textViewkq;
+        Button btncong, btntru, btnnhan, btnchia;
+void timdieukhien(){
+    editTextsoa = findViewById(R.id.edta);
+    editTextsob = findViewById(R.id.edtb);
+    btncong = findViewById(R.id.btncong);
+    btntru = findViewById(R.id.btntru);
+    btnnhan = findViewById(R.id.btnnhan);
+    btnchia = findViewById(R.id.btnchia);
+    textViewkq = findViewById(R.id.twkq);
+}
