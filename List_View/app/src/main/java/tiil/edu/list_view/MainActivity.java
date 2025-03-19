@@ -35,4 +35,15 @@ public class MainActivity extends AppCompatActivity {
         dsNgonNguLapTrinh.add("C++");
         dsNgonNguLapTrinh.add("C#");
         dsNgonNguLapTrinh.add("Python");
-        dsNgonNguLapTrinh.add("Java");
+        dsNgonNguLapTrinh.add("Java");ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, dsNgonNguLapTrinh);
+        listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String giaTriDuocChon = dsNgonNguLapTrinh.get(position);
+                Toast.makeText(MainActivity.this,giaTriDuocChon,Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+}
