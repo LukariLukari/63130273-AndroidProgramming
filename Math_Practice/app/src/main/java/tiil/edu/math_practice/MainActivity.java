@@ -67,3 +67,28 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     }
+    void XuLyNutTest() {
+        button_Check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (String.valueOf(Integer.parseInt(editText_NumA.getText().toString()) + Integer.parseInt(editText_NumB.getText().toString())).equals(editText_KetQua.getText().toString())) {
+                    editText_KetQua.setBackgroundResource(R.drawable.giaodien_dung);
+                } else {
+                    editText_KetQua.setBackgroundResource(R.drawable.giaodien_loi);
+                }
+            }
+        });
+    }
+    void XuLyXoaSo() {
+        button_Delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!editText_KetQua.getText().toString().isEmpty()) {
+                    editText_KetQua.setText(
+                            editText_KetQua.getText().delete(editText_KetQua.getText().length() - 1, editText_KetQua.getText().length())
+                    );
+                    editText_KetQua.setBackgroundResource(R.drawable.giaodien_edit);
+                }
+            }
+        });
+    }
