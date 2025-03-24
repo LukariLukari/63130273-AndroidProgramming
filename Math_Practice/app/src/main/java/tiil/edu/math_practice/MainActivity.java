@@ -30,3 +30,40 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        TimDieuKien();
+        XuLyNutSo();
+        XuLyXoaSo();
+        getAB();
+        XuLyNutClear();
+        XuLyNutCheck();
+    }
+
+    void getAB() {
+        editText_NumA.setText(String.valueOf((int)(Math.random() * 20)));
+        editText_NumB.setText(String.valueOf((int)(Math.random() * 20)));
+    }
+
+    void XuLyNutClear() {
+        button_Restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getAB();
+                editText_KetQua.setBackgroundResource(R.drawable.giaodien_edit);
+                editText_KetQua.setText("");
+            }
+        });
+    }
+    void XuLyNutSo() {
+        for (var button : button_num) {
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (editText_KetQua.getText().toString().isEmpty()) {
+                        editText_KetQua.setText(String.valueOf(button_num.indexOf(button)));
+                    } else {
+                        editText_KetQua.setText(editText_KetQua.getText().append(String.valueOf(button_num.indexOf(button))));
+                    }
+                }
+            });
+        }
+    }
