@@ -1,6 +1,9 @@
 package tiil.edu.math_practice;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +11,14 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    List<Button> button_num = new ArrayList<Button>();
+    Button button_Check, button_Delete, button_Restart;
+    EditText editText_NumA, editText_NumB, editText_KetQua;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +30,3 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-    }
-}
