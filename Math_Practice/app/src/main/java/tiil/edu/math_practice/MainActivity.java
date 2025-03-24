@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         XuLyXoaSo();
         getAB();
         XuLyNutClear();
-        XuLyNutCheck();
+        XuLyNutTest();
     }
 
     void getAB() {
@@ -92,3 +92,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    void TimDieuKien() {
+        button_num.add(findViewById(R.id.button_0));
+        button_num.add(findViewById(R.id.button_1));
+        button_num.add(findViewById(R.id.button_2));
+        button_num.add(findViewById(R.id.button_3));
+        button_num.add(findViewById(R.id.button_4));
+        button_num.add(findViewById(R.id.button_5));
+        button_num.add(findViewById(R.id.button_6));
+        button_num.add(findViewById(R.id.button_7));
+        button_num.add(findViewById(R.id.button_8));
+        button_num.add(findViewById(R.id.button_9));
+        button_Check = findViewById(R.id.button_Test);
+        button_Delete = findViewById(R.id.button_Delete);
+        button_Restart = findViewById(R.id.button_Clear);
+        editText_NumA = findViewById(R.id.editText_NumA);
+        editText_NumB = findViewById(R.id.editText_NumB);
+        editText_KetQua = findViewById(R.id.editText_KetQua);
+    }
+}

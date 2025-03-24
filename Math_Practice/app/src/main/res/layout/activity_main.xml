@@ -59,6 +59,41 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:text="3"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="4"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:text="5"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
                 android:id="@+id/button_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,6 +101,7 @@
                 android:layout_weight="1"
                 android:text="6"
                 android:textSize="20sp" />
+
             <Button
                 android:id="@+id/button_7"
                 android:layout_width="wrap_content"
@@ -75,6 +111,7 @@
                 android:layout_weight="1"
                 android:text="7"
                 android:textSize="20sp" />
+
             <Button
                 android:id="@+id/button_8"
                 android:layout_width="wrap_content"
@@ -84,6 +121,7 @@
                 android:text="8"
                 android:textSize="20sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -118,6 +156,7 @@
                 app:iconSize="20dp"
                 app:iconTint="@color/white" />
         </LinearLayout>
+
     </LinearLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
@@ -154,7 +193,7 @@
             android:layout_width="65dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:background="@drawable/custom_edt"
+            android:background="@drawable/giaodien_edit"
             android:ems="10"
             android:enabled="true"
             android:gravity="center"
@@ -171,7 +210,7 @@
             android:layout_width="130dp"
             android:layout_height="50dp"
             android:layout_marginEnd="16dp"
-            android:background="@drawable/custom_edt"
+            android:background="@drawable/giaodien_edit"
             android:ems="10"
             android:enabled="true"
             android:gravity="center"
