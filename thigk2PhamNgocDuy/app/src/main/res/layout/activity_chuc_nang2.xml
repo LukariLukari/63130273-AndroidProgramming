@@ -4,63 +4,62 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:fitsSystemWindows="true">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+    android:gravity="center_horizontal">
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/txtQuizTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mục tiêu giảng dạy môn học\nHÓC CHÍ MINH. Tổng thành tích Thắng Năm"
+        android:text="Quiz"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgQuizLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="146dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo50nam" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mốc thời gian Chiến dịch HỒ CHÍ MINH - Toàn thắng"
         android:textSize="16sp"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtMonth"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tên: Hồ Chí Minh"
-        android:textSize="16sp"/>
+        android:hint="Tháng"
+        android:inputType="number"
+        android:layout_marginTop="8dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Giải thưởng Miền Nam"
-        android:textSize="16sp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Đánh bại trước niên vụ: Bại cả thành phố"
-        android:textSize="16sp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mùa sự kiện trước: HCM"
-        android:textSize="16sp"/>
+        android:hint="Năm"
+        android:inputType="number"
+        android:layout_marginTop="8dp"/>
 
     <Button
-        android:id="@+id/btnKiemTra"
+        android:id="@+id/btnCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kiểm tra Đúng/Sai"
-        android:layout_gravity="center"
         android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/tvKetQua"
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hiển thị kết quả ở đây"
-        android:textSize="16sp"
+        android:text="Hiển kết quả ở đây"
         android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:layout_marginTop="16dp"/>
-
 </LinearLayout>

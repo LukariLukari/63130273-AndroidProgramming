@@ -21,22 +21,22 @@ public class MainActivity extends AppCompatActivity {
 
         // Ánh xạ các nút
         findViewById(R.id.btnChucNang2).setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ActivityChucNang2.class);
+            Intent intent = new Intent(MainActivity.this, ChucNang2Activity.class);
             startActivity(intent);
         });
 
         findViewById(R.id.btnChucNang3).setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ActivityChucNang3.class);
+            Intent intent = new Intent(MainActivity.this, ChucNang3Activity.class);
             startActivity(intent);
         });
 
         findViewById(R.id.btnChucNang4).setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ActivityChucNang4.class);
+            Intent intent = new Intent(MainActivity.this, ChucNang4Activity.class);
             startActivity(intent);
         });
 
         findViewById(R.id.btnAboutMe).setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ActivityAboutMe.class);
+            Intent intent = new Intent(MainActivity.this, AboutMeActivity.class);
             startActivity(intent);
         });
 

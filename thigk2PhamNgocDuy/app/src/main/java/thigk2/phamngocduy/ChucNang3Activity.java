@@ -7,7 +7,7 @@ import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class ActivityChucNang3 extends AppCompatActivity {
+public class ChucNang3Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class ActivityChucNang3 extends AppCompatActivity {
         // Xử lý sự kiện click vào item
         listView.setOnItemClickListener((parent, view, position, id) -> {
             String selectedStudent = students[position];
-            Intent intent = new Intent(ActivityChucNang3.this, Item3Activity.class);
+            Intent intent = new Intent(ChucNang3Activity.this, Item3Activity.class);
             intent.putExtra("item", selectedStudent);
             startActivity(intent);
         });

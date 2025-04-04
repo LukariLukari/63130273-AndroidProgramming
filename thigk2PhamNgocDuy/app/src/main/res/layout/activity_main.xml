@@ -24,9 +24,8 @@
             android:id="@+id/btnChucNang2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:text="Chức năng 2" />
-
+            android:text="Chức năng 2"
+            android:layout_margin="8dp"/>
         <Button
             android:id="@+id/btnChucNang3"
             android:layout_width="wrap_content"
@@ -47,11 +46,12 @@
             android:layout_height="wrap_content"
             android:text="AboutMe"
             android:layout_margin="8dp"/>
+
         <Button
             android:id="@+id/btnLamThem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Làm thêm"
+            android:text="AboutMe"
             android:layout_margin="8dp"/>
 
     </LinearLayout>
