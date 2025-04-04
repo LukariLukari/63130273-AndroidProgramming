@@ -23,8 +23,7 @@ public class ActivityLamThem extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
         ListView listView = findViewById(R.id.listViewBonus);
-
-        // Danh sách bài bonus (giả lập)
+        
         String[] bonusItems = {
                 "Bài bonus 1",
                 "Bài bonus 2",
