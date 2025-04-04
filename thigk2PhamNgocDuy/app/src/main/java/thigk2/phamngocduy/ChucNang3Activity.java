@@ -24,3 +24,26 @@ public class ActivityChucNang3 extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
         ListView listView = findViewById(R.id.listView);
+
+        // Danh sách SV
+        String[] students = {
+                "Thành tích SV Giỏi",
+                "Giải phóng Miền Nam",
+                "Đánh bại trước niên vụ",
+                "Bại cả thành phố",
+                "Mùa sự kiện trước"
+        };
+
+        // Tạo adapter cho ListView
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, students);
+        listView.setAdapter(adapter);
+
+        // Xử lý sự kiện click vào item
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            String selectedStudent = students[position];
+            Intent intent = new Intent(ActivityChucNang3.this, Item3Activity.class);
+            intent.putExtra("item", selectedStudent);
+            startActivity(intent);
+        });
+    }
+}
