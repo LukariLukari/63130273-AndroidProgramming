@@ -12,7 +12,7 @@ public class ActivityChucNang2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chuc_nang2);
 
-        // Thiết lập Toolbar
+        // Toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
@@ -21,13 +21,11 @@ public class ActivityChucNang2 extends AppCompatActivity {
         }
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
-        // Ánh xạ
         Button btnKiemTra = findViewById(R.id.btnKiemTra);
         TextView tvKetQua = findViewById(R.id.tvKetQua);
 
-        // Xử lý nút Kiểm tra Đúng/Sai
+        // Xử lý nút KT Đ/S
         btnKiemTra.setOnClickListener(v -> {
-            // Giả sử thông tin là sai (có thể thay đổi logic kiểm tra)
             tvKetQua.setText("Thông tin: Sai");
         });
     }
