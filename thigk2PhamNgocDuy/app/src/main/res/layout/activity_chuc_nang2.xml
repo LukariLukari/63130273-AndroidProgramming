@@ -40,6 +40,27 @@
         android:text="Đánh bại trước niên vụ: Bại cả thành phố"
         android:textSize="16sp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mùa sự kiện trước: HCM"
+        android:textSize="16sp"/>
 
+    <Button
+        android:id="@+id/btnKiemTra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiểm tra Đúng/Sai"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hiển thị kết quả ở đây"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>
