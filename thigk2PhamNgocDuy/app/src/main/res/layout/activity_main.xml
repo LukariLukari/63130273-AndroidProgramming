@@ -24,5 +24,29 @@
             android:id="@+id/btnChucNang2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Chức năng 2"
+            android:layout_margin="8dp"
+            android:text="Chức năng 2" />
+
+        <Button
+            android:id="@+id/btnChucNang3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chức năng 3"
             android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnChucNang4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chức năng 4"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/btnAboutMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AboutMe"
+            android:layout_margin="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>
